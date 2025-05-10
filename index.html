@@ -116,16 +116,8 @@
       <div class="cotas">
   
         <div class="cotas-one">
-                    <button type="button" class="cota" onclick="selecionarValor(15)">
+                    <button type="button" class="cota" onclick="selecionarValor(20)">
               <div class="cota-qtd">                    
-                  +15
-              </div>
-              <h1>R$14,85</h1>
-              <h2>SELECIONAR</h2>
-          </button>
-  
-          <button type="button" class="cota" onclick="selecionarValor(20)">
-              <div class="cota-qtd">
                   +20
               </div>
               <h1>R$19,85</h1>
@@ -134,9 +126,17 @@
   
           <button type="button" class="cota" onclick="selecionarValor(30)">
               <div class="cota-qtd">
-              +30
+                  +30
               </div>
               <h1>R$29,70</h1>
+              <h2>SELECIONAR</h2>
+          </button>
+  
+          <button type="button" class="cota" onclick="selecionarValor(40)">
+              <div class="cota-qtd">
+              +40
+              </div>
+              <h1>R$39,60</h1>
               <h2>SELECIONAR</h2>
           </button>
   
@@ -146,12 +146,12 @@
   
         <div class="cotas-one">
             
-            <button type="button" class="cota" onclick="selecionarValor(40)">
+            <button type="button" class="cota" onclick="selecionarValor(50)">
               <i class="bi bi-star-fill destaque"></i>
               <div class="cota-qtd">
-              +40
+              +50
               </div>
-              <h1>R$39,60</h1>
+              <h1>R$48,50</h1>
               <h2>SELECIONAR</h2>
           </button>
   
@@ -329,9 +329,6 @@
               if (valorBotao === valorAtual) {
                   botao.classList.add('cota-selected');
                   switch (valorBotao) {
-                      case 15:
-                          link = "https://pay.compraeguraapay.com.br/checkout/bf9f2413-b397-4ce1-8084-42c23d801350";
-                          break;
                       case 20:
                           link = "https://pay.compraeguraapay.com.br/checkout/9a36c646-e9cf-4868-8942-a669df8057ca";
                           break;
@@ -340,6 +337,9 @@
                           break;
                       case 40:
                           link = "https://pay.compraeguraapay.com.br/checkout/39f47c1a-e31d-4f7c-b050-d451c7cbf66e";
+                          break;
+                      case 50:
+                          link = "https://pay.compraeguraapay.com.br/checkout/fddfa685-6f75-4bdc-8826-1bd0c5d50eca";
                           break;
                       case 70:
                           link = "https://pay.compraeguraapay.com.br/checkout/bafb2f03-c870-4f2c-ad51-30ede7e244c9";
